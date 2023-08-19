@@ -1,55 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praticando HTML & CSS</title>
-    <link rel="stylesheet" href="./css/main.min.css">
-</head>
-
-<body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ticket-Cinema</title>
+  </head>
+  <body>
     <section class="s-ticket">
-        <div class="ticket">
-            <div class="image">
-                <img src="imagem/imgTicket.png" alt="ImagemTicket">
-                <span>LEGENDADO</span>
-            </div>
-            <div class="info">
-                <h1>Homem-Aranha: Através do Aranhaverso</h1>
-                <li>
-                    <span>Sala</span>
-                    <strong>01</strong>
-                </li>
-                <li>
-                    <span>Fileira</span>
-                    <strong>F</strong>
-                </li>
-                <li>
-                    <span>Poltrona</span>
-                    <strong>8</strong>
-                </li>
-                <li>
-                    <span>Data</span>
-                    <strong>10 DEZ 23</strong>
-                </li>
-                <li>
-                    <span>Sessão</span>
-                    <strong>16:15</strong>
-                </li>
-                <li>
-                    <span>Valor</span>
-                    <strong>R$ 11,90</strong>
-                </li>
-            </div>
-            <div class="bar-code">
-                <img src="imagem/Vector.svg" alt="">
-            </div>
+      <div class="ticket" data-tilt>
+       <div class="image">
+        <img src="assets/Film-Image.png" alt="Imagem do filme" />
+        <span>Dublado</span>
+       </div>
+        <div class="info">
+          <h1>Homem-Aranha: Através do Aranhaverso</h1>
+          <ul>
+            <li>
+              <span>Sala</span>
+              <strong>18</strong>
+            </li>
+            <li>
+              <span>Fileira</span>
+              <strong>F</strong>
+            </li>
+            <li>
+              <span>Poltrona</span>
+              <strong>12</strong>
+            </li>
+            <li>
+              <span>Data</span>
+              <strong>16Dez23</strong>
+            </li>
+            <li>
+              <span>Sessão</span>
+              <strong>20:00</strong>
+            </li>
+            <li>
+              <span>Valor</span>
+              <strong>R$ 23,50</strong>
+            </li>
+          </ul>
         </div>
-        
+        <div class="bar-code">
+          <img src="assets/barcode.svg" alt="Imagem do codigo de barras" />
+        </div>
+      </div>
+      
     </section>
-</body>
 
+    <script src="js/vanilla-tilt.min.js"></script>
+  </body>
 </html>
